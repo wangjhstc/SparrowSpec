@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.author             = { "wangjhstc" => "wangjhstc@126com" }
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/wangjhstc/SparrowModel.git", :commit => "ef6b366" }
-  s.source_files  = "SparrowModel", "SparrowModel/Src/**/*.{h,m}"
+  s.source_files  = "SparrowModel/Src/**/*.{h,m}"
   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
