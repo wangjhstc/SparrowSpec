@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author             = { "wangjhstc" => "wangjhstc@126com" }
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/wangjhstc/SparrowModel.git", :commit => "ef6b366" }
+  s.source       = { :git => "https://github.com/wangjhstc/SparrowModel.git", :commit => "90e567d" }
   s.source_files = "SparrowModel/Src/MInterface.h"
   s.public_header_files = "SparrowModel/Src/MInterface.h"
   s.requires_arc = true
