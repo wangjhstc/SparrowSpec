@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
   s.author             = { "wangjhstc" => "wangjhstc@126com" }
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/wangjhstc/SparrowBusiness.git", :commit => "55d3cef" }
-  s.source_files = "SparrowBusiness/Src/BInterface.h"
-  s.public_header_files = "SparrowBusiness/Src/BInterface.h"
+  s.source_files = "SparrowBusiness/Src/BInterface.h","SparrowBusiness/Src/BInterface.m"
+  # s.public_header_files = "SparrowBusiness/Src/BInterface.h"
   s.requires_arc = true
 
   # 商品
