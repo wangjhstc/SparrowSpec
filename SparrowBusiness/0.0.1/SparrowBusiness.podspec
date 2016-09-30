@@ -18,9 +18,8 @@ Pod::Spec.new do |s|
 
   # 商品
    s.subspec 'Interface' do |interface|
-      commodity.source_files = 'SparrowBusiness/Src/Interface/**/*.{h,m}'
-      # commodity.public_header_files = 'SparrowModel/Src/Module/**/*.h'
-      # commodity.dependency 'SparrowModel/Sparrow'
+      interface.source_files = 'SparrowBusiness/Src/Interface/**/*.{h,m}'
+      interface.dependency 'SparrowModel'
   end
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
