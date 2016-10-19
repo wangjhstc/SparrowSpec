@@ -19,11 +19,13 @@ Pod::Spec.new do |s|
   # 商品
    s.subspec 'Interface' do |interface|
       interface.source_files = 'SparrowBusiness/Src/Interface/**/*.{h,m}'
-      # interface.dependency 'SparrowModel'
+      interface.dependency 'SparrowModel'
+      interface.dependency "SparrowData"
+      interface.dependency "AFNetworking", "~> 3.0"
   end
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "SparrowModel"
-  s.dependency "SparrowData"
-  s.dependency "AFNetworking", "~> 3.0"
+  # s.dependency "SparrowModel"
+  # s.dependency "SparrowData"
+  # s.dependency "AFNetworking", "~> 3.0"
 end
