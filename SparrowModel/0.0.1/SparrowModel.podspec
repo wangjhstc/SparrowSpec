@@ -11,10 +11,15 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author             = { "wangjhstc" => "wangjhstc@126com" }
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/wangjhstc/SparrowModel.git", :commit => "4e3113f" }
+  s.source       = { :git => "https://github.com/wangjhstc/SparrowModel.git", :commit => "35047bc" }
   s.source_files = "SparrowModel/Src/MInterface.h"
   s.public_header_files = "SparrowModel/Src/MInterface.h"
   s.requires_arc = true
+
+  # 文档
+  s.subspec 'Document' do |document|
+    document.source_files = 'SparrowModel/Document/**/*.{md,rtf,markdown}'
+  end
 
   # 商品
    s.subspec 'Commodity' do |commodity|
