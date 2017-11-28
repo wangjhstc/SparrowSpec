@@ -26,6 +26,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Document' do |document|
     document.source_files = 'SparrowBusiness/Src/Document/**/*.*'
+    document.user_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/"/**' }
     # document.user_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=0' }
       # s.user_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1' }
   end
